@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <style>
+        .sect {
+            width: 1440px;
+        }
+        /* .backgroundd {
+            width: 1440px;
+    height: 1024px;
+    background-image: url("image/pattern.svg");
+    background-size: cover;
+    position: absolute; 
+        } */
+        .thoughts {
+    font-family: 'Montserrat';
+font-weight: 500;
+font-size: 200px;
+text-transform: uppercase;
+text-align: center;
+color: #e2e2e2;
+mix-blend-mode: difference;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 1024px;
+/* margin-top: -1100px; */
+z-index: 999;
+ /* position: relative; */
+
+}
+ /* .firstthought {
+margin-top: -400px;
+margin-left: 50px;
+}  */
+/* .secondthought {
+margin-top: -1000px;
+margin-left: 1100px;
+} */
+/* .thirdthought {
+margin-top: -600px;
+margin-left: 200px;
+} */
+/* .fourthought {
+margin-top: -130px;
+margin-left: 700px;
+} */
+/* .firstthought {
+    cursor: pointer;
+}
+.pattern {
+    cursor: pointer;
+}
+.secondthought {
+    cursor: pointer;
+}
+.thirdthought {
+    cursor: pointer;
+}
+.fourthought {
+    cursor: pointer;
+} */
+.pattern {
+    position: absolute;
+    margin-top: 0px;
+
+
+}
+
+.photo {
+    display: inline-block;
+flex-wrap: nowrap;
+/* position: absolute;
+margin-top: -1100px; */
+margin-top: -1100px;
+z-index: 1;
+}
+
+.firstthought {
+    
+    position: absolute;
+    /* margin-top: 0px; */
+    margin-left: 47px;
+    margin-top: -200px;
+  
+}
+.secondthought {
+    position: absolute;
+    /* margin-top: 0px; */
+    margin-left: 1089px;
+    margin-top: -500px;
+  
+}
+.thirdthought {
+    position: absolute;
+    /* margin-top: 80px; */
+    margin-left: 286px;
+    margin-top: -500px;
+}
+.fourthought {
+    position: absolute;
+    /* margin-top: 280px; */
+    margin-left: 586px;
+    margin-top: 0px;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+   
+    .sect {
+        
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+     
+        
+    }
+    .background {
+        width: 1440px;
+    }
+    
+}
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    .sect {
+        width: 100%;
+    
+    }
+    .background {
+        width: 1440px;
+    }
+    
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .sect {
+        width: 100%;
+    }
+    .pattern {
+        width: 100%;
+    }
+   
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sect {
+        width: 100%;
+    }
+    .pattern {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+    .sect {
+        width: 100%;
+    }
+    .pattern {
+        width: 100%;
+    }
+   
+}
+@media only screen and (min-width: 360px) and (max-width: 414px) {
+    .sect {
+        width: 100%;
+    }
+    .pattern {
+        width: 100%;
+    }
+   
+   
+}
+@media only screen and (max-width: 360px) {
+    .sect {
+        width: 100%;
+    }
+    .pattern {
+        width: 100%;
+    }
+   
+   
+}
+
+
+    </style>
+    <section class="sect">
+        <div class="background">
+   <div class="thoughts"><p>delite bad <br> thoughts</p></div>
+   
+ <div id="backgroundd">
+    <div class="pattern"><img class="photo" src="image/pattern.svg" onclick="deletePhoto(this)"></div>
+    <div class="firstthought"><img class="photo" src="image/firstthought.svg" onclick="deletePhoto(this)"></div>
+    <div class="secondthought"><img class="photo" src="image/secondthought.svg" onclick="deletePhoto(this)"></div>
+    <div class="thirdthought"><img class="photo" src="image/thirdthought.svg" onclick="deletePhoto(this)"></div>
+    <div class="fourthought"><img class="photo" src="image/fourthought.svg" onclick="deletePhoto(this)"></div>
+    
+
+    
+   </div>
+</div>
+</section>
+
+   <!-- <div class="backgroundd">
+    <div class="pattern"><img src="image/pattern.svg" alt="pattern"id="pattern"></div>
+    <div class="thoughts"><p>delite bad <br> thoughts</p></div>
+    <div class="firstthought"><img src="image/firstthought.svg" alt="firstthought"id="firstthought"></div>
+    <div class="secondthought"><img src="image/secondthought.svg" alt="secondthought"id="secondthought"></div>
+    <div class="thirdthought"><img src="image/thirdthought.svg" alt="thirdthought"id="thirdthought"></div>
+    <div class="fourthought"><img src="image/fourthought.svg" alt="fourthought"id="fourthought"></div>
+   </div> -->
+
+   <!-- <script>
+    document.getElementById('firstthought').addEventListener('click',function() {this.remove()});
+    // document.getElementById('firstthought').addEventListener('click',function() {
+    // document.body.style.backgroundImage='none'})
+
+    document.getElementById('pattern').addEventListener('click',function() {this.remove()});
+    // document.getElementById('pattern').addEventListener('click',function() {
+    // document.body.style.backgroundImage='none'})
+
+    document.getElementById('secondthought').addEventListener('click',function() {this.remove()});
+    // document.getElementById('secondthought').addEventListener('click',function() {
+    // document.body.style.backgroundImage='none'})
+
+    document.getElementById('thirdthought').addEventListener('click',function() {this.remove()});
+    // document.getElementById('thirdthought').addEventListener('click',function() {
+    // document.body.style.backgroundImage='none'})
+
+    document.getElementById('fourthought').addEventListener('click',function() {this.remove()});
+    // document.getElementById('fourthought').addEventListener('click',function() {
+    // document.body.style.backgroundImage='none'})
+   </script> -->
+   
+   <script>
+    function deletePhoto(photo) {
+        photo.remove();
+    }
+   </script>
+
+</body>
+</html>

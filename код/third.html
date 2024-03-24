@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+    .background {
+        /* width: 1440px; */
+        height: 1024px;
+        background-image: url("image/glass.svg");
+        background-size: cover;
+        position: absolute;
+    }
+    .break {
+        font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e2e2e2;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1024px;
+    margin-left: 50px;
+    }
+    /* .image {
+        cursor: pointer;
+    } */
+    /* .active {
+        border: 2px solid red;
+    } */
+    .glasses {
+        position: absolute;
+        margin-top: -500px;
+        margin-left: 100px;
+    }
+    .glasses2 {
+        position: absolute;
+        margin-top: -1000px;
+        margin-left: 800px;
+    }
+    .glasses3 {
+        position: absolute;
+        margin-top: -550px;
+        margin-left: 1000px;
+    }
+    @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+    
+    .sect {
+        
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+     
+        
+    }
+    .background {
+    width: 1440px;}
+    .glasses3 {
+        position: absolute;
+        margin-top: -550px;
+        margin-left: 1000px;
+    }
+    .glasses2 {
+        position: absolute;
+        margin-top: -1000px;
+        margin-left: 800px;
+    }
+    
+}
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    .sect {
+        width: 100%;
+    }
+    .background {
+    width: 1440px;}
+    
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .sect {
+        width: 100%;
+    }
+    .background {
+    width: 1366px;}
+    .glasses3 {
+        position: absolute;
+        margin-top: -1000px;
+        margin-left: 0px;
+    }
+   
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sect {
+        width: 100%;
+    }
+    .background {
+    width: 1024px;}
+   
+}
+
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+    .sect {
+        width: 100%;
+    }
+    .background {
+    width: 100%;}
+    /* .glasses2 {
+        position: absolute;
+        margin-top: -800px;
+        margin-left: 200px;
+    } */
+    .glasses3 {
+        position: absolute;
+        margin-top: -1000px;
+        margin-left: 0px;
+    }
+  
+    
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 414px) {
+    .sect {
+        width: 100%;
+    }
+    .background {
+    width: 100%;}
+}
+@media only screen and (max-width: 360px) {
+    .sect {
+        width: 100%;
+    }
+    .background {
+    width: 100%;}
+}
+        </style>
+        
+        <!-- <img src="image/firstglass.svg" class="image" onclick="changeImage(this)">
+        <img src="image/secondglass.svg" class="image" onclick="changeImage(this)">
+        <img src="image/thirdglass.svg" class="image" onclick="changeImage(this)"> -->
+        <section class="sect">
+        <div class="background">
+            <div class="break"><p>break <br> things</p></div>
+            <div class="glasses"><img src="image/firstglass.svg" id="img_1" onClick="chg(this.id)"></div>
+            <div class="glasses2"><img src="image/secondglass.svg" id="img_2" onClick="chg(this.id)"></div>
+            <div class="glasses3"><img src="image/thirdglass.svg" id="img_3" onClick="chg(this.id)"></div>
+                </div>
+            </section>
+        <script>
+            // function changeImage(image) {
+            //     const images = document.querySelectorAll('.image');
+            //     images.forEach(img => { if (img !== image) {
+            //         img.classList.remove('active');
+            //     }
+            // });
+            // image.classList.add('active');
+            // }
+            
+function chg(id){
+if (document.getElementById(id).src.indexOf("image/firstglass.svg")>0){
+document.getElementById(id).src="image/glasss.svg"
+}else{
+document.getElementById(id).src="image/firstglass.svg"
+}
+}
+
+function chg(id){
+if (document.getElementById(id).src.indexOf("image/secondglass.svg")>0){
+document.getElementById(id).src="image/glasss.svg"
+}else{
+document.getElementById(id).src="image/glasss.svg"
+}
+}
+
+function chg(id){
+if (document.getElementById(id).src.indexOf("image/thirdglass.svg")>0){
+document.getElementById(id).src="image/glasss.svg"
+}else{
+document.getElementById(id).src="image/glasss.svg"
+}
+}
+        </script>
+</body>
+</html>
